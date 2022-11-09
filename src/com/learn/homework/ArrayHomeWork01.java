@@ -17,7 +17,7 @@ public class ArrayHomeWork01 {
         for (int i = 0; i < arr.length; i++){
             if (insetNum <= arr[i]){
                 index = i;
-                break;//找到就退出
+                break;//找到就退出，不然继续匹配。
             }
         }
         if (index == -1){
