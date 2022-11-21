@@ -5,7 +5,8 @@ package com.scope;
  */
 public class VarScope {
     public static void main(String[] args) {
-
+        Cat cat = new Cat();
+        cat.cry();
     }
 }
 class Cat{
@@ -31,6 +32,7 @@ class Cat{
     public void eat(){
         System.out.println("在eat方法中使用属性 age = "+age);
      //   System.out.println("在eat中使用cry变量name ="+name);//错误
+
     }
 }
 
