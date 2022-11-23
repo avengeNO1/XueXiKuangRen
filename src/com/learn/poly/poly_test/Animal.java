@@ -1,4 +1,4 @@
-package com.learn.poly_test;
+package com.learn.poly.poly_test;
 
 /**
  * @author HuAng

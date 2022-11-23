@@ -1,4 +1,4 @@
-package com.learn.poly_test;
+package com.learn.poly.poly_test;
 
 /**
  * @author HuAng
@@ -14,7 +14,12 @@ public class PolyExercise {
         animal.show();
         //向下转型
         Cat cat = (Cat) animal;
-        ((Cat) animal).catchMouse();
+        cat.catchMouse();
+
+
+        //要求父类的引用必须指向的是当前目标类型的对象
+      //  Dog dog = (Dog) animal;//运行报错
+
 
     }
 }
