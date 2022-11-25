@@ -10,6 +10,12 @@ public class Pupil {
     public int age;
     private double score;
 
+    public Pupil(String name, int age) {//添加构造器
+        this.name = name;
+        this.age = age;
+
+    }
+
     public void setScore(double score) {
         this.score = score;
     }

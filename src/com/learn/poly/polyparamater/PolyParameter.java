@@ -23,8 +23,8 @@ public class PolyParameter {//测试类
     //用instanceof比较符判断 对象e 的运行类型是否为 Worker类型或者Manger类型
     public void testWork(Employee e){
         if (e instanceof Worker){
-//            Worker worker = (Worker) e;//向下转型
-//            worker.work();
+            Worker worker = (Worker) e;//向下转型
+            worker.work();
          // ((Worker) e).work();
         }else if (e instanceof Manger){
             ((Manger) e).manage();
