@@ -76,6 +76,8 @@ public class SmallChangeSysOOP {
                     System.out.println("选择有误，请重新选择");
             }
         }while (loop);
+        System.out.println("---------------退出零钱通系统---------------");
+
     }
     //2.完成零钱通明细
     public void detail(){
@@ -89,7 +91,7 @@ public class SmallChangeSysOOP {
         //思路： 找出不正确的金额的条件，然后给出提示 直接break
         if (money <= 0){
             System.out.println("收益入账金额范围应该大于0");
-            return;//退出方法，不再执行后面的方法
+            return;//退出方法
         }
         balance += money;
         //拼接收益入账信息到details

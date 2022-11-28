@@ -56,7 +56,7 @@ public class SmallChangeSys {
             System.out.println("\t\t\t1 零钱通明细");
             System.out.println("\t\t\t2 收益入账");
             System.out.println("\t\t\t3 消费");
-            System.out.println("\t\t\t4 退      出");
+            System.out.println("\t\t\t4 退     出");
             System.out.println("请选择（1-4）：");
             key = scanner.next();
 
@@ -87,6 +87,7 @@ public class SmallChangeSys {
                   // System.out.println("3 消费");
                     System.out.println("消费金额：");
                     money = scanner.nextDouble();
+
                     // money 的值的范围应该进行校验
                     //找出消费金额不正确的
                     if (money <= 0 || money > balance){
