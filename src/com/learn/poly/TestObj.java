@@ -21,19 +21,7 @@ class Person{
     private int age;
     private char gender;
 
-    public boolean equals(Object obj){
-        if (this == obj){
-            return true;
-        }
-        if (obj instanceof Person){
-            Person p = (Person)obj;
-            //return this.name.equals(p.name) && this.age == p.age && this.gender == gender;
-            if (this.name.equals(p.name) && this.age == p.age && this.gender == gender){
-                return true;
-            }
-        }
-        return false;
-    }
+
 
     public Person(String name, int age, char gender) {
         this.name = name;
@@ -63,6 +51,23 @@ class Person{
 
     public void setGender(char gender) {
         this.gender = gender;
+    }
+    //重写equals方法
+    public boolean equals(Object obj){
+        //判断两个对象是否为同一个对象，是则返回true
+        if (this == obj){
+            return true;
+        }
+        if (obj instanceof Person){//判断类型 是Person类型或者Person类型的子类才比较
+
+            //向下转型 得到obj的各个属性
+            Person p = (Person)obj;
+            //return this.name.equals(p.name) && this.age == p.age && this.gender == gender;
+            if (this.name.equals(p.name) && this.age == p.age && this.gender == gender){
+                return true;
+            }
+        }
+        return false;
     }
 }
    
