@@ -5,6 +5,7 @@ package com.learn.abstract_;
  */
 public class Manager extends Employee {
     private double bonus;//奖金
+
     public Manager(String name, int id, double salary) {
         super(name, id, salary);
     }
